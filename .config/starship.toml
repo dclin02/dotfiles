@@ -1,0 +1,10 @@
+[aws]
+disabled = true
+
+[time]
+format = "[$time]($style) "
+style = "245"
+disabled = false
+
+[package]
+display_private = true
