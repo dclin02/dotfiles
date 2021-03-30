@@ -1,0 +1,4 @@
+#!/bin/bash
+sed -i -e \
+'s/\/bin\/google-chrome-stable/\/bin\/google-chrome-stable --profile-directory="Guest Profile"/g' \
+/usr/share/applications/google-chrome.desktop

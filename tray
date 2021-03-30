@@ -1,0 +1,17 @@
+#!/bin/bash
+comment_tray_output_line () { sed -i -e "s/^\(\s*\)\(tray_output $1\)/\1# \2/g" config ; }
+uncomment_tray_output_line () { sed -i -e "s/^\(\s*\)# \(tray_output $1\)/\1\2/g" config ; }
+
+if [ -z "$1" ]; then set "edp"; fi;
+cd /home/berin/.i3
+
+for output in "eDP-1-1" "DP-0" "HDMI-0"; do
+  # ${a,,} gets $a in lowercase
+  if [[ "${output,,}" == "${1,,}"* ]]; then
+    uncomment_tray_output_line "$output"
+  else
+    comment_tray_output_line "$output"
+  fi
+done
+
+i3-msg reload
