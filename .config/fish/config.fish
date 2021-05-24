@@ -10,3 +10,5 @@ alias tray="/home/berin/tray"
 starship init fish | source
 
 alias config='/usr/bin/git --git-dir=/home/berin/.cfg/ --work-tree=/home/berin'
+alias one='dp one && tray'
+alias dpdp='dp && tray dp'

@@ -55,7 +55,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 # bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 exec --no-startup-id pa-applet
-# exec --no-startup-id pulseeffects --gapplication-service
+exec --no-startup-id pulseeffects --gapplication-service
 bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
@@ -325,8 +325,10 @@ exec --no-startup-id clipit
 exec --no-startup-id blueman-applet
 # exec --no-startup-id start_conky_green
 # exec --no-startup-id xautolock -time 10 -locker blurlock
+exec --no-startup-id xidlehook --not-when-fullscreen --not-when-audio --timer 600 'blurlock' ''
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+
 exec_always --no-startup-id numlockx on
 exec --no-startup-id xcape -e "#66=Escape"
 exec --no-startup-id yakuake
@@ -380,8 +382,8 @@ bar {
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
  	# tray_output primary
 	# tray_output eDP-1-1
-  # tray_output HDMI-0
-  tray_output DP-0
+  tray_output HDMI-0
+  # tray_output DP-0
 
 	bindsym button4 nop
 	bindsym button5 nop
