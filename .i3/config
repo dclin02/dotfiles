@@ -343,7 +343,7 @@ exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id i3 --get-socketpath > /tmp/i3wm-socket-path
 
 for_window [instance="main_alacritty"] floating enable;
-bindsym $mod+t exec --no-startup-id "i3dropdown -H 100,0,1060 -l 0 main_alacritty \
+bindsym $mod+t exec --no-startup-id "i3dropdown -H 100,0,1060 main_alacritty \
     \\"alacritty --class main_alacritty -e /usr/bin/fish -c 'tmux attach-session -t main || tmux new -s main'\\""
 
 
