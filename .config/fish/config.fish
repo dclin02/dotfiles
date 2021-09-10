@@ -3,6 +3,7 @@ load_nvm
 thefuck --alias | source
 fish_vi_key_bindings
 alias man="batman"
+alias cat="bat"
 alias ls="exa -a --color=always --group-directories-first --icons"
 alias lg="lazygit"
 alias tray="/home/berin/tray"
