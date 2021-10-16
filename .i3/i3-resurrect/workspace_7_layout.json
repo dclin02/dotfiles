@@ -13,7 +13,7 @@
   "marks": [],
   "name": "7",
   "orientation": "none",
-  "percent": 0.5,
+  "percent": 0.3333333333333333,
   "scratchpad_state": "none",
   "sticky": false,
   "type": "workspace",
@@ -40,10 +40,10 @@
       "type": "floating_con",
       "workspace_layout": "default",
       "rect": {
-        "x": 3851,
-        "y": 12,
+        "x": 5,
+        "y": 8,
         "width": 1492,
-        "height": 1032
+        "height": 1042
       },
       "nodes": [
         {
@@ -52,14 +52,14 @@
           "floating": "user_on",
           "fullscreen_mode": 0,
           "geometry": {
-            "x": 11,
+            "x": 3851,
             "y": 12,
             "width": 1490,
             "height": 1030
           },
           "layout": "splith",
           "marks": [],
-          "name": "Slack | development | EasyDeco",
+          "name": "Slack | * prod-pack-atualiza\u00e7\u00f5es | isaac",
           "orientation": "none",
           "percent": 1.0,
           "scratchpad_state": "none",
@@ -96,8 +96,8 @@
       "type": "floating_con",
       "workspace_layout": "default",
       "rect": {
-        "x": 5357,
-        "y": 358,
+        "x": 1515,
+        "y": 365,
         "width": 390,
         "height": 686
       },
