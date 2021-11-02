@@ -13,7 +13,7 @@
   "marks": [],
   "name": "7",
   "orientation": "none",
-  "percent": 0.3333333333333333,
+  "percent": null,
   "scratchpad_state": "none",
   "sticky": false,
   "type": "workspace",
@@ -40,63 +40,7 @@
       "type": "floating_con",
       "workspace_layout": "default",
       "rect": {
-        "x": 5,
-        "y": 8,
-        "width": 1492,
-        "height": 1042
-      },
-      "nodes": [
-        {
-          "border": "pixel",
-          "current_border_width": 1,
-          "floating": "user_on",
-          "fullscreen_mode": 0,
-          "geometry": {
-            "x": 3851,
-            "y": 12,
-            "width": 1490,
-            "height": 1030
-          },
-          "layout": "splith",
-          "marks": [],
-          "name": "Slack | * prod-pack-atualiza\u00e7\u00f5es | isaac",
-          "orientation": "none",
-          "percent": 1.0,
-          "scratchpad_state": "none",
-          "sticky": false,
-          "type": "con",
-          "workspace_layout": "default",
-          "swallows": [
-            {
-              "class": "^Slack$",
-              "instance": "^slack$"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "border": "pixel",
-      "current_border_width": -1,
-      "floating": "auto_off",
-      "fullscreen_mode": 0,
-      "geometry": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      },
-      "layout": "splith",
-      "marks": [],
-      "name": null,
-      "orientation": "horizontal",
-      "percent": null,
-      "scratchpad_state": "none",
-      "sticky": false,
-      "type": "floating_con",
-      "workspace_layout": "default",
-      "rect": {
-        "x": 1515,
+        "x": 5355,
         "y": 365,
         "width": 390,
         "height": 686
@@ -126,6 +70,62 @@
             {
               "class": "^Toggl\\ Desktop$",
               "instance": "^TogglDesktop$"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "border": "pixel",
+      "current_border_width": -1,
+      "floating": "auto_off",
+      "fullscreen_mode": 0,
+      "geometry": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "layout": "splith",
+      "marks": [],
+      "name": null,
+      "orientation": "horizontal",
+      "percent": null,
+      "scratchpad_state": "none",
+      "sticky": false,
+      "type": "floating_con",
+      "workspace_layout": "default",
+      "rect": {
+        "x": 3849,
+        "y": 9,
+        "width": 1492,
+        "height": 1042
+      },
+      "nodes": [
+        {
+          "border": "pixel",
+          "current_border_width": 1,
+          "floating": "user_on",
+          "fullscreen_mode": 0,
+          "geometry": {
+            "x": 1920,
+            "y": 9,
+            "width": 1490,
+            "height": 1040
+          },
+          "layout": "splith",
+          "marks": [],
+          "name": "Slack | packs-prs | isaac | 1 new item",
+          "orientation": "none",
+          "percent": 1.0,
+          "scratchpad_state": "none",
+          "sticky": false,
+          "type": "con",
+          "workspace_layout": "default",
+          "swallows": [
+            {
+              "class": "^Slack$",
+              "instance": "^slack$"
             }
           ]
         }

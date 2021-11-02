@@ -15,3 +15,8 @@ alias one='dp one && tray'
 alias dpdp='dp && tray dp'
 
 direnv hook fish | source
+set -gx EDITOR lvim
+
+fish_add_path (go env GOPATH)/bin
+
+abbr -a ld lazydocker

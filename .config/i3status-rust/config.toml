@@ -6,7 +6,7 @@ name = "awesome"
 
 [[block]]
 block = "music"
-buttons = ["play"]
+buttons = ["play", "next"]
 hide_when_empty = false
 dynamic_width = false
 

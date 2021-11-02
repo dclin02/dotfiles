@@ -395,12 +395,13 @@ bar {
 	# status_command i3status
   status_command /usr/bin/i3status-rs /home/berin/.config/i3status-rust/config.toml
 	position bottom
+	# position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
  	# tray_output primary
-	tray_output eDP-1-1
+	# tray_output eDP-1-1
   # tray_output HDMI-0
-  # tray_output DP-0
+  tray_output DP-0
 
 	bindsym button4 nop
 	bindsym button5 nop
