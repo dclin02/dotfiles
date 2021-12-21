@@ -12,11 +12,16 @@ an executable
 lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "onedarker"
+-- lvim.colorscheme = "material"
+vim.g.material_style = 'darker'
+vim.g.tokyonight_style = "night"
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+lvim.keys.normal_mode["<A-l>"] = ":BufferMoveNext<CR>"
+lvim.keys.normal_mode["<A-h>"] = ":BufferMovePrevious<CR>"
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
 -- edit a default keymapping
@@ -154,3 +159,18 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- }
 lvim.lang.go.formatters = {{ exe = "gofmt" }}
 lvim.lang.python.formatters = {{ exe = "black" }}
+lvim.plugins = {
+  {"lunarvim/colorschemes"},
+  {"christianchiarulli/nvcode-color-schemes.vim"},
+  {"tomasiser/vim-code-dark"},
+  {"marko-cerovac/material.nvim"},
+  {"sainnhe/sonokai"},
+  {"tanvirtin/monokai.nvim"},
+  {"sainnhe/gruvbox-material"},
+  {"ldelossa/vimdark"},
+  {"olimorris/onedarkpro.nvim"},
+  {"rmehri01/onenord.nvim"},
+  {"RishabhRD/gruvy"},
+  {"folke/tokyonight.nvim"},
+  {"overcache/NeoSolarized"},
+}
