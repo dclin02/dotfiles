@@ -13,9 +13,11 @@ starship init fish | source
 alias config='/usr/bin/git --git-dir=/home/berin/.cfg/ --work-tree=/home/berin'
 alias one='dp one && tray'
 alias dpdp='dp && tray dp'
+alias vb='/home/berin/virtual-background.sh'
 
 direnv hook fish | source
 set -gx EDITOR lvim
+set -gx BROWSER /usr/bin/firefox
 
 fish_add_path (go env GOPATH)/bin
 

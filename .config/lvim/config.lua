@@ -153,3 +153,4 @@ lvim.builtin.treesitter.highlight.enabled = true
 --   { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
 -- }
 lvim.lang.go.formatters = {{ exe = "gofmt" }}
+lvim.lang.python.formatters = {{ exe = "black" }}
