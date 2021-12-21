@@ -5,6 +5,14 @@ name = "modern"
 name = "awesome"
 
 [[block]]
+block = "battery"
+interval = 10
+format = "KB {percentage}"
+device = "hid-dc:2c:26:06:3b:9a-battery"
+allow_missing = true
+hide_missing = true
+
+[[block]]
 block = "music"
 buttons = ["play", "next"]
 hide_when_empty = false
