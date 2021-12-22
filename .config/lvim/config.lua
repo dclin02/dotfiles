@@ -65,6 +65,9 @@ lvim.keys.normal_mode["<A-9>"] = ":BufferGoto 9<CR>"
 --   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
 --   w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
 -- }
+lvim.builtin.which_key.mappings["r"] = {
+  "<cmd>RnvimrToggle<cr>", "Ranger"
+}
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -182,4 +185,13 @@ lvim.plugins = {
   {"RishabhRD/gruvy"},
   {"folke/tokyonight.nvim"},
   {"overcache/NeoSolarized"},
+  {
+    "kevinhwang91/rnvimr",
+    cmd = "RnvimrToggle",
+    config = function()
+      vim.g.rnvimr_draw_border = 1
+      vim.g.rnvimr_pick_enable = 1
+      vim.g.rnvimr_bw_enable = 1
+      end,
+  }
 }
