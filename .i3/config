@@ -330,6 +330,7 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
 exec_always --no-startup-id numlockx on
+exec --no-startup-id /home/berin/xkb-caps-lock.sh
 exec --no-startup-id xcape -e "#66=Escape"
 # exec --no-startup-id yakuake
 exec_always --no-startup-id sbxkb
