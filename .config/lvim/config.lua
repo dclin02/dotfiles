@@ -68,6 +68,9 @@ lvim.keys.normal_mode["<A-9>"] = ":BufferGoto 9<CR>"
 lvim.builtin.which_key.mappings["r"] = {
   "<cmd>RnvimrToggle<cr>", "Ranger"
 }
+lvim.builtin.which_key.mappings["lR"] = {
+  "<cmd>lua vim.diagnostic.reset()<cr>", "Reset Diagnostics"
+}
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
