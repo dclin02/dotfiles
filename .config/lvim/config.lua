@@ -31,6 +31,8 @@ lvim.keys.normal_mode["<A-6>"] = ":BufferGoto 6<CR>"
 lvim.keys.normal_mode["<A-7>"] = ":BufferGoto 7<CR>"
 lvim.keys.normal_mode["<A-8>"] = ":BufferGoto 8<CR>"
 lvim.keys.normal_mode["<A-9>"] = ":BufferGoto 9<CR>"
+
+lvim.keys.insert_mode["<C-k>"] = "<cmd>lua vim.lsp.buf.signature_help()<cr>"
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
 -- edit a default keymapping
