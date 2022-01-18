@@ -33,6 +33,8 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+n exec dunstctl set-paused toggle
 # clear notifications
 bindsym $mod+n exec dunstctl close-all
+# notificaton history
+bindsym $mod+Ctrl+h exec dunstctl history-pop
 
 # kill focused window
 bindsym $mod+Shift+q kill
