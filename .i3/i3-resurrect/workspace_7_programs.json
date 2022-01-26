@@ -8,7 +8,8 @@
   {
     "command": [
       "/usr/lib/slack/slack",
-      "-s"
+      "-s",
+      "--enable-crashpad"
     ],
     "working_directory": "/home/berin"
   }

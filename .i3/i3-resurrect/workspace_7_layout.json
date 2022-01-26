@@ -13,7 +13,7 @@
   "marks": [],
   "name": "7",
   "orientation": "none",
-  "percent": null,
+  "percent": 1.0,
   "scratchpad_state": "none",
   "sticky": false,
   "type": "workspace",
@@ -40,8 +40,8 @@
       "type": "floating_con",
       "workspace_layout": "default",
       "rect": {
-        "x": 5355,
-        "y": 365,
+        "x": 1515,
+        "y": 367,
         "width": 390,
         "height": 686
       },
@@ -52,8 +52,8 @@
           "floating": "user_on",
           "fullscreen_mode": 0,
           "geometry": {
-            "x": 5357,
-            "y": 358,
+            "x": 1515,
+            "y": 397,
             "width": 388,
             "height": 684
           },
@@ -96,8 +96,8 @@
       "type": "floating_con",
       "workspace_layout": "default",
       "rect": {
-        "x": 3849,
-        "y": 9,
+        "x": 10,
+        "y": 10,
         "width": 1492,
         "height": 1042
       },
@@ -108,8 +108,8 @@
           "floating": "user_on",
           "fullscreen_mode": 0,
           "geometry": {
-            "x": 1920,
-            "y": 9,
+            "x": 2350,
+            "y": 10,
             "width": 1490,
             "height": 1040
           },
