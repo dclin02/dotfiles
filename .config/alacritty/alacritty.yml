@@ -33,7 +33,6 @@ font:
   # family: Hack Nerd Font Mono
   size: 8.5
 
-background_opacity: 1.0
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -54,6 +53,7 @@ selection:
 live_config_reload: true
 
 window:
+  opacity: 1.0
   padding:
     x: 2
     y: 2
