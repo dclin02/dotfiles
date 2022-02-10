@@ -12,13 +12,13 @@
   "layout": "splith",
   "marks": [],
   "name": "7",
-  "orientation": "none",
-  "percent": 1.0,
+  "orientation": "horizontal",
+  "percent": 0.33333333333333337,
   "scratchpad_state": "none",
   "sticky": false,
   "type": "workspace",
   "workspace_layout": "default",
-  "floating_nodes": [
+  "nodes": [
     {
       "border": "pixel",
       "current_border_width": -1,
@@ -30,102 +30,90 @@
         "width": 0,
         "height": 0
       },
-      "layout": "splith",
+      "layout": "tabbed",
       "marks": [],
       "name": null,
       "orientation": "horizontal",
       "percent": null,
       "scratchpad_state": "none",
       "sticky": false,
-      "type": "floating_con",
+      "type": "con",
       "workspace_layout": "default",
-      "rect": {
-        "x": 1515,
-        "y": 367,
-        "width": 390,
-        "height": 686
-      },
       "nodes": [
         {
           "border": "pixel",
-          "current_border_width": 1,
-          "floating": "user_on",
+          "current_border_width": -1,
+          "floating": "auto_off",
           "fullscreen_mode": 0,
           "geometry": {
-            "x": 1515,
-            "y": 397,
-            "width": 388,
-            "height": 684
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
           },
           "layout": "splith",
           "marks": [],
-          "name": "Toggl Track",
-          "orientation": "none",
+          "name": null,
+          "orientation": "horizontal",
           "percent": 1.0,
           "scratchpad_state": "none",
           "sticky": false,
           "type": "con",
           "workspace_layout": "default",
-          "swallows": [
+          "nodes": [
             {
-              "class": "^Toggl\\ Desktop$",
-              "instance": "^TogglDesktop$"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "border": "pixel",
-      "current_border_width": -1,
-      "floating": "auto_off",
-      "fullscreen_mode": 0,
-      "geometry": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
-      },
-      "layout": "splith",
-      "marks": [],
-      "name": null,
-      "orientation": "horizontal",
-      "percent": null,
-      "scratchpad_state": "none",
-      "sticky": false,
-      "type": "floating_con",
-      "workspace_layout": "default",
-      "rect": {
-        "x": 10,
-        "y": 10,
-        "width": 1492,
-        "height": 1042
-      },
-      "nodes": [
-        {
-          "border": "pixel",
-          "current_border_width": 1,
-          "floating": "user_on",
-          "fullscreen_mode": 0,
-          "geometry": {
-            "x": 2350,
-            "y": 10,
-            "width": 1490,
-            "height": 1040
-          },
-          "layout": "splith",
-          "marks": [],
-          "name": "Slack | packs-prs | isaac | 1 new item",
-          "orientation": "none",
-          "percent": 1.0,
-          "scratchpad_state": "none",
-          "sticky": false,
-          "type": "con",
-          "workspace_layout": "default",
-          "swallows": [
+              "border": "pixel",
+              "current_border_width": 1,
+              "floating": "user_off",
+              "fullscreen_mode": 0,
+              "geometry": {
+                "x": 2350,
+                "y": 10,
+                "width": 1490,
+                "height": 1040
+              },
+              "layout": "splith",
+              "marks": [],
+              "name": "Slack | cumbuca-da-diversidade-g4 | isaac | 6 new items",
+              "orientation": "none",
+              "percent": 0.8500000000000003,
+              "scratchpad_state": "none",
+              "sticky": false,
+              "type": "con",
+              "workspace_layout": "default",
+              "swallows": [
+                {
+                  "class": "^Slack$",
+                  "instance": "^slack$"
+                }
+              ]
+            },
             {
-              "class": "^Slack$",
-              "instance": "^slack$"
+              "border": "pixel",
+              "current_border_width": 1,
+              "floating": "user_off",
+              "fullscreen_mode": 0,
+              "geometry": {
+                "x": 1515,
+                "y": 397,
+                "width": 388,
+                "height": 684
+              },
+              "layout": "splith",
+              "marks": [],
+              "name": "Toggl Track",
+              "orientation": "none",
+              "percent": 0.15000000000000008,
+              "scratchpad_state": "none",
+              "sticky": false,
+              "type": "con",
+              "workspace_layout": "default",
+              "swallows": [
+                {
+                  "class": "^Toggl\\ Desktop$",
+                  "instance": "^TogglDesktop$"
+                }
+              ]
             }
           ]
         }

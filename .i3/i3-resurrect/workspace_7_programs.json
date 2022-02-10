@@ -1,15 +1,17 @@
 [
   {
     "command": [
-      "/usr/bin/TogglDesktop"
+      "/usr/lib/slack/slack",
+      "-s",
+      "--enable-crashpad",
+      "--enable-crashpad",
+      "--enable-crashpad"
     ],
     "working_directory": "/home/berin"
   },
   {
     "command": [
-      "/usr/lib/slack/slack",
-      "-s",
-      "--enable-crashpad"
+      "/usr/bin/TogglDesktop"
     ],
     "working_directory": "/home/berin"
   }
