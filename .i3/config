@@ -58,7 +58,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 # bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 exec --no-startup-id pa-applet
-exec --no-startup-id pulseeffects --gapplication-service
+# exec --no-startup-id pulseeffects --gapplication-service
 bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
