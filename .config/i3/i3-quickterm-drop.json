@@ -1,0 +1,7 @@
+{
+  "term": "alacritty",
+  "ratio": 0.5,
+  "shells": {
+    "dropdown": "/usr/bin/fish -c 'tmux attach-session -t dropdown || tmux new -s dropdown'"
+  }
+}

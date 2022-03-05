@@ -342,26 +342,14 @@ exec --no-startup-id unclutter
 exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id kdeconnect-indicator
 
-# bindsym $mod+t [class="yakuake"] scratchpad show
+for_window [title="SpeedCrunch"] floating enable, resize set 1728 432, move position 96 0, move scratchpad, scratchpad show
+bindsym $mod+c exec --no-startup-id /home/berin/.i3/i3-show-calc
 
-# necessary for i3dropdown
-exec --no-startup-id i3 --get-socketpath > /tmp/i3wm-socket-path
+for_window [instance="dropdown_alacritty"] floating enable, resize set 1728 540, move position 96 0, move scratchpad, sticky enable, scratchpad show
+bindsym $mod+d exec --no-startup-id /home/berin/.i3/i3-drop-term
 
-for_window [instance="main_alacritty"] floating enable;
-bindsym $mod+t exec --no-startup-id "i3dropdown -H 100,0,1061 main_alacritty \
-    \\"alacritty --class main_alacritty -e /usr/bin/fish -c 'tmux attach-session -t main || tmux new -s main'\\""
-
-
-for_window [instance="dropdown_alacritty"] floating enable;
-bindsym $mod+d exec --no-startup-id i3dropdown -H 50 -W 90 dropdown_alacritty \
-  "alacritty --class dropdown_alacritty -e /usr/bin/fish -c 'tmux attach-session -t dropdown || tmux new -s dropdown'"
-
-for_window [instance="speedcrunch"] floating enable;
-bindsym $mod+c exec --no-startup-id i3dropdown -H 40 -W 90 speedcrunch speedcrunch
-
-# for_window [title="SpeedCrunch"] move scratchpad
-# # bindsym $mod+c [title="SpeedCrunch"] scratchpad show
-# bindsym $mod+c exec fish -c show-or-launch-calc
+for_window [instance="fs_alacritty"] floating enable, resize set 1920 1061, move position 0 0, move scratchpad, sticky enable, scratchpad show
+bindsym $mod+t exec --no-startup-id /home/berin/.i3/i3-fs-term
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:

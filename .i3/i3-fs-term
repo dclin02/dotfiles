@@ -1,0 +1,9 @@
+#!/bin/bash
+
+num=`ps aux|rg '[^rg]alacritty \-\-class fs_alacritty'|wc -l`
+if [ $num -gt 0 ]
+  then
+    i3-msg '[instance="fs_alacritty"] scratchpad show'
+  else
+    alacritty --class fs_alacritty -e /usr/bin/fish -c "tmux attach-session -t 'fs' || tmux new -s 'fs'" &
+fi

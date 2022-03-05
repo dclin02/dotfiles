@@ -1,0 +1,7 @@
+{
+  "term": "alacritty",
+  "ratio": 1,
+  "shells": {
+    "main": "/usr/bin/fish -c 'tmux attach-session -t main || tmux new -s main'"
+  }
+}
