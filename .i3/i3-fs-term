@@ -1,9 +1,5 @@
 #!/bin/bash
 
-tmux () {
-
-}
-
 num=`ps aux|rg '[^rg]alacritty \-\-class main_alacritty'|wc -l`
 if [ $num -gt 0 ]
   then
