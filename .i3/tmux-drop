@@ -1,0 +1,9 @@
+#!/bin/bash
+
+tmux has-session -t dropdown 2>/dev/null
+if [ $? -ne 0 ]; then
+  tmux new-session -s dropdown -n vb -d
+  tmux move-window -t 9
+  tmux send-keys -t 9 "vb" Enter
+  tmux new-window -t 0
+fi
