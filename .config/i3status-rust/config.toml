@@ -8,7 +8,7 @@ name = "awesome"
 block = "battery"
 interval = 10
 format = "KB {percentage}"
-device = "hid-dc:2c:26:06:3b:9a-battery"
+device = "hid-dc:2c:26:2f:52:58-battery"
 allow_missing = true
 hide_missing = true
 
