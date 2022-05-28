@@ -2,18 +2,18 @@
   "border": "pixel",
   "current_border_width": -1,
   "floating": "auto_off",
-  "fullscreen_mode": 1,
+  "fullscreen_mode": 0,
   "geometry": {
     "x": 0,
     "y": 0,
     "width": 0,
     "height": 0
   },
-  "layout": "splith",
+  "layout": "splitv",
   "marks": [],
   "name": "7",
-  "orientation": "horizontal",
-  "percent": 0.33333333333333337,
+  "orientation": "vertical",
+  "percent": 0.5,
   "scratchpad_state": "none",
   "sticky": false,
   "type": "workspace",
@@ -51,10 +51,10 @@
             "width": 0,
             "height": 0
           },
-          "layout": "splith",
+          "layout": "splitv",
           "marks": [],
           "name": null,
-          "orientation": "horizontal",
+          "orientation": "vertical",
           "percent": 1.0,
           "scratchpad_state": "none",
           "sticky": false,
@@ -64,19 +64,19 @@
             {
               "border": "pixel",
               "current_border_width": 1,
-              "floating": "user_off",
+              "floating": "auto_off",
               "fullscreen_mode": 0,
               "geometry": {
-                "x": 2350,
-                "y": 10,
-                "width": 1490,
-                "height": 1040
+                "x": 1921,
+                "y": 1,
+                "width": 1078,
+                "height": 1422
               },
               "layout": "splith",
               "marks": [],
-              "name": "Slack | cumbuca-da-diversidade-g4 | isaac | 6 new items",
+              "name": "Slack | isaac-random | isaac",
               "orientation": "none",
-              "percent": 0.8500000000000003,
+              "percent": 0.7000000000000001,
               "scratchpad_state": "none",
               "sticky": false,
               "type": "con",
@@ -90,28 +90,78 @@
             },
             {
               "border": "pixel",
-              "current_border_width": 1,
-              "floating": "user_off",
+              "current_border_width": -1,
+              "floating": "auto_off",
               "fullscreen_mode": 0,
               "geometry": {
-                "x": 1515,
-                "y": 397,
-                "width": 388,
-                "height": 684
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
               },
               "layout": "splith",
               "marks": [],
-              "name": "Toggl Track",
-              "orientation": "none",
-              "percent": 0.15000000000000008,
+              "name": null,
+              "orientation": "horizontal",
+              "percent": 0.29999999999999993,
               "scratchpad_state": "none",
               "sticky": false,
               "type": "con",
               "workspace_layout": "default",
-              "swallows": [
+              "nodes": [
                 {
-                  "class": "^Toggl\\ Desktop$",
-                  "instance": "^TogglDesktop$"
+                  "border": "pixel",
+                  "current_border_width": 1,
+                  "floating": "auto_off",
+                  "fullscreen_mode": 0,
+                  "geometry": {
+                    "x": 0,
+                    "y": 0,
+                    "width": 800,
+                    "height": 600
+                  },
+                  "layout": "splith",
+                  "marks": [],
+                  "name": "notes:1:isaac - \"notes.txt (~/isaac) - NVIM\"",
+                  "orientation": "none",
+                  "percent": 0.5,
+                  "scratchpad_state": "none",
+                  "sticky": false,
+                  "type": "con",
+                  "workspace_layout": "default",
+                  "swallows": [
+                    {
+                      "class": "^Alacritty$",
+                      "instance": "^Alacritty$"
+                    }
+                  ]
+                },
+                {
+                  "border": "pixel",
+                  "current_border_width": 1,
+                  "floating": "auto_off",
+                  "fullscreen_mode": 0,
+                  "geometry": {
+                    "x": 1920,
+                    "y": 0,
+                    "width": 1080,
+                    "height": 1899
+                  },
+                  "layout": "splith",
+                  "marks": [],
+                  "name": "Toggl Track",
+                  "orientation": "none",
+                  "percent": 0.5,
+                  "scratchpad_state": "none",
+                  "sticky": false,
+                  "type": "con",
+                  "workspace_layout": "default",
+                  "swallows": [
+                    {
+                      "class": "^Toggl\\ Desktop$",
+                      "instance": "^TogglDesktop$"
+                    }
+                  ]
                 }
               ]
             }

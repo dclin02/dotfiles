@@ -214,11 +214,11 @@ workspace 1 output DP-0
 workspace 2 output DP-0
 workspace 3 output DP-0
 workspace 4 output DP-0
-workspace 5 output eDP-1-1
-workspace 6 output eDP-1-1
-workspace 7 output eDP-1-1
-workspace 8 output eDP-1-1
-workspace 9 output eDP-1-1
+workspace 5 output HDMI-0
+workspace 6 output HDMI-0
+workspace 7 output HDMI-0
+workspace 8 output HDMI-0
+workspace 9 output HDMI-0
 
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
@@ -264,7 +264,7 @@ for_window [urgent=latest] focus
 bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+Shift++r restart
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
@@ -288,7 +288,7 @@ mode "$mode_system" {
 }
 
 # Resize window (you can also use the mouse for that)
-bindsym $mod+r mode "resize"
+bindsym $mod+Ctrl+r mode "resize"
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
         # Pressing left will shrink the window’s width.
@@ -337,28 +337,33 @@ exec --no-startup-id /home/berin/xkb-caps-lock.sh
 exec --no-startup-id xcape -e "#66=Escape"
 # exec --no-startup-id yakuake
 exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia_all_screens
+# exec --no-startup-id start_conky_maia_all_screens
+exec --no-startup-id start_conky_maia
 exec --no-startup-id unclutter
 exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id kdeconnect-indicator
 
 # necessary for i3dropdown
-exec --no-startup-id i3 --get-socketpath > /tmp/i3wm-socket-path
+# exec --no-startup-id i3 --get-socketpath > /tmp/i3wm-socket-path
 
-for_window [instance="main_alacritty"] floating enable;
-bindsym $mod+t exec --no-startup-id "i3dropdown -f 240 -H 100,0,1061 main_alacritty \
-    \\"alacritty --class main_alacritty -e /usr/bin/fish -c 'tmux attach-session -t main || tmux new -s main'\\""
+# for_window [instance="main_alacritty"] floating enable;
+# bindsym $mod+t exec --no-startup-id "i3dropdown -f 240 -H 100,0,1061 main_alacritty \
+# bindsym $mod+t exec --no-startup-id "i3dropdown -f 240 -H 98 main_alacritty \
+#     \\"alacritty --class main_alacritty -e /usr/bin/fish -c 'tmux attach-session -t main || tmux new -s main'\\""
 
-for_window [instance="dropdown_alacritty"] floating enable;
-bindsym $mod+d exec --no-startup-id i3dropdown -f 240 -H 50 -W 90 dropdown_alacritty \
-  "alacritty --class dropdown_alacritty -e /usr/bin/fish -c '/home/berin/.i3/tmux-drop && tmux attach-session -t dropdown'"
+# for_window [instance="dropdown_alacritty"] floating enable;
+# bindsym $mod+d exec --no-startup-id i3dropdown -f 240 -H 50 -W 90 dropdown_alacritty \
+#   "alacritty --class dropdown_alacritty -e /usr/bin/fish -c '/home/berin/.i3/tmux-drop && tmux attach-session -t dropdown'"
 # bindsym $mod+d exec --no-startup-id i3dropdown -f 240 -H 50 -W 90 dropdown_alacritty \
 #   "alacritty --class dropdown_alacritty -e /usr/bin/fish -c 'tmux attach-session -t dropdown || tmux new -s dropdown'"
 
-for_window [instance="speedcrunch"] floating enable;
-bindsym $mod+c exec --no-startup-id i3dropdown -f 240 -H 40 -W 90 speedcrunch speedcrunch
+# for_window [instance="speedcrunch"] floating enable;
+# bindsym $mod+c exec --no-startup-id i3dropdown -f 240 -H 40 -W 90 speedcrunch speedcrunch
 
 # for_window [title="SpeedCrunch"] floating enable, resize set 1728 432, move position 96 0, move scratchpad, scratchpad show
+# bindsym $mod+c exec --no-startup-id /home/berin/.i3/i3-show-calc
+# for_window [title="SpeedCrunch"] floating enable, resize set 100 ppt 100 ppt, move position 0 ppt 0 ppt, move scratchpad, scratchpad show
+# for_window [title="SpeedCrunch"] floating enable, resize set 100 ppt 100 ppt, move position 0 ppt 0 ppt, move scratchpad, scratchpad show
 # bindsym $mod+c exec --no-startup-id /home/berin/.i3/i3-show-calc
 
 # for_window [instance="dropdown_alacritty"] floating enable, resize set 1728 540, move position 96 0, move scratchpad, sticky enable, scratchpad show
@@ -366,6 +371,8 @@ bindsym $mod+c exec --no-startup-id i3dropdown -f 240 -H 40 -W 90 speedcrunch sp
 
 # for_window [instance="main_alacritty"] floating enable, resize set 1920 1061, move position 0 0, move scratchpad, sticky enable, scratchpad show
 # bindsym $mod+t exec --no-startup-id /home/berin/.i3/i3-fs-term
+bindsym $mod+t exec --no-startup-id python /home/berin/.i3/i3drop-fs.py
+bindsym $mod+d exec --no-startup-id python /home/berin/.i3/i3drop.py
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
