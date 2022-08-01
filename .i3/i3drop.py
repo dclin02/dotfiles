@@ -6,6 +6,7 @@ DROPDOWN_CHILD_IDENTIFIER = "dropdown_alacritty"
 INITIAL_TERMINAL_QUANTITY = 1
 TERMINAL_COMMAND          = f"alacritty --class {DROPDOWN_CHILD_IDENTIFIER} -e /usr/bin/fish -c '/home/berin/.i3/tmux-drop && tmux attach-session -t dropdown'"
 HEIGHT_PERCENTAGE         = 50
+WIDTH_PERCENTAGE          = 95
 
 i3 = i3ipc.Connection()
 tree = i3.get_tree()
@@ -14,8 +15,8 @@ workspace_rect = focused.workspace().rect
 
 toggle_dropdown_command = f"""
   [con_mark={DROPDOWN_IDENTIFIER}] scratchpad show,
-  resize set {workspace_rect.width} px {workspace_rect.height*HEIGHT_PERCENTAGE//100} px,
-  move absolute position {workspace_rect.x}px {workspace_rect.y}px
+  resize set {workspace_rect.width*WIDTH_PERCENTAGE//100} px {workspace_rect.height*HEIGHT_PERCENTAGE//100} px,
+  move absolute position {workspace_rect.x + (workspace_rect.width*(100-WIDTH_PERCENTAGE)//200)}px {workspace_rect.y}px
 """
 
 replies = i3.command(toggle_dropdown_command)

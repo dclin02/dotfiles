@@ -373,6 +373,7 @@ exec --no-startup-id kdeconnect-indicator
 # bindsym $mod+t exec --no-startup-id /home/berin/.i3/i3-fs-term
 bindsym $mod+t exec --no-startup-id python /home/berin/.i3/i3drop-fs.py
 bindsym $mod+d exec --no-startup-id python /home/berin/.i3/i3drop.py
+bindsym $mod+c exec --no-startup-id python /home/berin/.i3/i3drop-calc.py
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
