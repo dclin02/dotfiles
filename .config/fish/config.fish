@@ -14,6 +14,7 @@ alias config='/usr/bin/git --git-dir=/home/berin/.cfg/ --work-tree=/home/berin'
 alias one='dp one && tray'
 alias dpdp='dp && tray dp'
 alias vb='/home/berin/virtual-background.sh'
+alias panda='/home/berin/Gopanda2.AppImage'
 
 direnv hook fish | source
 set -gx EDITOR lvim
