@@ -70,6 +70,7 @@ lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+lvim.builtin.treesitter.rainbow.enable = true
 
 lvim.builtin.dap.active = true
 lvim.builtin.lualine.sections.lualine_y = { "location" }
@@ -195,6 +196,16 @@ lvim.plugins = {
     end,
   },
   { "christoomey/vim-tmux-navigator" },
+  { "p00f/nvim-ts-rainbow" },
+  {
+    "ellisonleao/glow.nvim",
+    ft = { "markdown" }
+    -- run = "yay -S glow"
+  },
+  {
+    "ggandor/lightspeed.nvim",
+    event = "BufRead",
+  },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
