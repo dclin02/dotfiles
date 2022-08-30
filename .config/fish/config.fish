@@ -1,5 +1,4 @@
 zoxide init fish | source
-load_nvm
 thefuck --alias | source
 fish_vi_key_bindings
 alias man="batman"
