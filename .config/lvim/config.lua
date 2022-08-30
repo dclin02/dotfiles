@@ -187,6 +187,25 @@ formatters.setup({
 -- }
 lvim.plugins = {
   {
+    "tpope/vim-fugitive",
+    cmd = {
+      "G",
+      "Git",
+      "Gdiffsplit",
+      "Gread",
+      "Gwrite",
+      "Ggrep",
+      "GMove",
+      "GDelete",
+      "GBrowse",
+      "GRemove",
+      "GRename",
+      "Glgrep",
+      "Gedit"
+    },
+    ft = { "fugitive" }
+  },
+  {
     "kevinhwang91/rnvimr",
     config = function()
         vim.g.rnvimr_draw_border = 1
