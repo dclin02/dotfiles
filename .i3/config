@@ -546,6 +546,7 @@ mode "mouse" {
 	bindsym Shift+h exec xdotool mousemove_relative -- -$quick 0
 	bindsym Shift+j exec xdotool mousemove_relative 0 $quick
 	bindsym Shift+k exec xdotool mousemove_relative -- 0 -$quick
+	bindsym Shift+l exec xdotool mousemove_relative $quick 0
 	
 	# Mouse movement (quicker) -- arrow keys
 
@@ -601,5 +602,4 @@ mode "mouse" {
 	bindsym Escape mode "default"
 }
 
-bindsym $mod+$mod2+Shift+m mode "mouse"bindsym Shift+l exec xdotool mousemove_relative $quick 0
-
+bindsym $mod+$mod2+Shift+m mode "mouse"
