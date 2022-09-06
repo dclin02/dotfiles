@@ -208,10 +208,10 @@ lvim.plugins = {
   {
     "kevinhwang91/rnvimr",
     config = function()
-        vim.g.rnvimr_draw_border = 1
-        vim.g.rnvimr_enable_picker = 1
-        vim.g.rnvimr_enable_bw = 1
-        vim.g.rnvimr_hide_gitignore = 0
+      vim.g.rnvimr_draw_border = 1
+      vim.g.rnvimr_enable_picker = 1
+      vim.g.rnvimr_enable_bw = 1
+      vim.g.rnvimr_hide_gitignore = 0
     end,
   },
   { "christoomey/vim-tmux-navigator" },
@@ -224,6 +224,32 @@ lvim.plugins = {
   {
     "ggandor/lightspeed.nvim",
     event = "BufRead",
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    event = "BufRead",
+    config = function()
+      local opts = {
+        -- char = "▏",
+        filetype_exclude = {
+          "alpha",
+          "help",
+          "terminal",
+          "dashboard",
+          "lspinfo",
+          "lsp-installer",
+          "mason",
+        },
+        buftype_exclude = { "terminal" },
+        bufname_exclude = { "config.lua" },
+
+        show_trailing_blankline_indent = false,
+        show_first_indent_level = false,
+        -- use_treesitter = false,
+      }
+
+      require("indent_blankline").setup(opts)
+    end
   },
 }
 
