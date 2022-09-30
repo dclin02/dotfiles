@@ -22,3 +22,6 @@ set -gx BROWSER /usr/bin/firefox
 fish_add_path (go env GOPATH)/bin
 
 abbr -a ld lazydocker
+
+bass source ~/.gvm/environments/system
+source /opt/asdf-vm/asdf.fish
