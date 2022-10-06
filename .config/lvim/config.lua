@@ -61,6 +61,21 @@ lvim.builtin.which_key.mappings["r"] = {
 lvim.builtin.which_key.mappings["lR"] = {
   "<cmd>lua vim.diagnostic.reset()<cr>", "Reset Diagnostics"
 }
+lvim.builtin.which_key.mappings["lo"] = {
+  "<cmd>SymbolsOutline<cr>", "Symbols Outline"
+}
+lvim.builtin.which_key.mappings["gD"] = {
+  name = "Diff View Plugin",
+  o = { "<cmd>DiffviewOpen<cr>", "Open" },
+  c = { "<cmd>DiffviewClose<cr>", "Close" },
+  f = { "<cmd>DiffviewFileHistory<cr>", "File History" },
+}
+lvim.builtin.which_key.mappings["t"] = {
+  name = "Todo Comments",
+  q = { "<cmd>TodoQuickFix<cr>", "Quick Fix" },
+  l = { "<cmd>TodoLocList<cr>", "Loc List" },
+  t = { "<cmd>TodoTelescope<cr>", "Todo Telescope" },
+}
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -250,6 +265,68 @@ lvim.plugins = {
 
       require("indent_blankline").setup(opts)
     end
+  },
+  {
+    "simrat39/symbols-outline.nvim",
+    config = function()
+      require('symbols-outline').setup()
+    end
+  },
+  {
+    "karb94/neoscroll.nvim",
+    event = "WinScrolled",
+    config = function()
+      require('neoscroll').setup({
+        -- All these keys will be mapped to their corresponding default scrolling animation
+        mappings = { '<C-u>', '<C-d>', '<C-b>', '<C-f>',
+          '<C-y>', '<C-e>', 'zt', 'zz', 'zb' },
+        hide_cursor = true, -- Hide cursor while scrolling
+        stop_eof = true, -- Stop at <EOF> when scrolling downwards
+        use_local_scrolloff = false, -- Use the local scope of scrolloff instead of the global scope
+        respect_scrolloff = false, -- Stop scrolling when the cursor reaches the scrolloff margin of the file
+        cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
+        easing_function = nil, -- Default easing function
+        pre_hook = nil, -- Function to run before the scrolling animation starts
+        post_hook = nil, -- Function to run after the scrolling animation ends
+      })
+    end
+  },
+  {
+    "sindrets/diffview.nvim",
+    event = "BufRead",
+  },
+  {
+    "romgrk/nvim-treesitter-context",
+    config = function()
+      require("treesitter-context").setup {
+        enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
+        throttle = true, -- Throttles plugin updates (may improve performance)
+        max_lines = 0, -- How many lines the window should span. Values <= 0 mean no limit.
+        patterns = { -- Match patterns for TS nodes. These get wrapped to match at word boundaries.
+          -- For all filetypes
+          -- Note that setting an entry here replaces all other patterns for this entry.
+          -- By setting the 'default' entry below, you can control which nodes you want to
+          -- appear in the context window.
+          default = {
+            'class',
+            'function',
+            'method',
+          },
+        },
+      }
+    end
+  },
+  {
+    "ray-x/lsp_signature.nvim",
+    event = "BufRead",
+    config = function() require "lsp_signature".on_attach() end,
+  },
+  {
+    "folke/todo-comments.nvim",
+    event = "BufRead",
+    config = function()
+      require("todo-comments").setup()
+    end,
   },
 }
 
