@@ -10,6 +10,10 @@ set $mod2 Mod1
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 1
+
+# (hopefully temp) fix for new behaviou after upgrade: https://github.com/i3/i3/issues/5149
+for_window [all] border pixel 0
+
 default_floating_border normal
 
 # Hide borders
