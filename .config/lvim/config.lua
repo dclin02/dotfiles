@@ -328,6 +328,13 @@ lvim.plugins = {
       require("todo-comments").setup()
     end,
   },
+  {
+    "windwp/nvim-spectre",
+    event = "BufRead",
+    config = function()
+      require("spectre").setup()
+    end,
+  },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
