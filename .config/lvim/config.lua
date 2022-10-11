@@ -21,8 +21,8 @@ lvim.leader = "space"
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.insert_mode["<C-k>"] = "<cmd>lua vim.lsp.buf.signature_help()<cr>"
 
-lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
-lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+lvim.keys.normal_mode["<A-l>"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["<A-h>"] = ":BufferLineCyclePrev<CR>"
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
@@ -94,6 +94,9 @@ lvim.builtin.lualine.sections.lualine_y = { "location" }
 
 vim.opt.shell = "/bin/bash"
 vim.cmd [[set jumpoptions+=stack]]
+vim.cmd [[set fillchars+=vert:\ ]]
+vim.cmd [[au ColorScheme * hi VertSplit guibg=#282c34]]
+
 
 -- if you don't want all the parsers change this to a table of the ones you want
 lvim.builtin.treesitter.ensure_installed = {
