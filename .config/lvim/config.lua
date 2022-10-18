@@ -87,6 +87,7 @@ lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+lvim.builtin.nvimtree.setup.actions.open_file.resize_window = true
 lvim.builtin.treesitter.rainbow.enable = true
 
 lvim.builtin.dap.active = true
