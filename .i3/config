@@ -63,7 +63,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 # bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 exec --no-startup-id pa-applet
-# exec --no-startup-id pulseeffects --gapplication-service
+exec --no-startup-id easyeffects --gapplication-service
 bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
@@ -421,9 +421,9 @@ bar {
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
  	# tray_output primary
-	tray_output eDP-1-1
+	# tray_output eDP-1-1
   # tray_output HDMI-0
-  # tray_output DP-0
+  tray_output DP-0
 
 	bindsym button4 nop
 	bindsym button5 nop
