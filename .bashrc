@@ -287,3 +287,5 @@ export HISTSIZE=10000
 eval "$(thefuck --alias)"
 eval "$(zoxide init bash)"
 
+
+# [[ -s "/home/berin/.gvm/scripts/gvm" ]] && source "/home/berin/.gvm/scripts/gvm"

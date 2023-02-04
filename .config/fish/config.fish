@@ -14,6 +14,8 @@ alias one='dp one && tray'
 alias dpdp='dp && tray dp'
 alias vb='/home/berin/virtual-background.sh'
 alias panda='/home/berin/Gopanda2.AppImage'
+alias tf='terraform'
+alias kubectl='/home/berin/.asdf/installs/gcloud/412.0.0/bin/kubectl'
 
 direnv hook fish | source
 set -gx EDITOR lvim
@@ -23,5 +25,4 @@ fish_add_path (go env GOPATH)/bin
 
 abbr -a ld lazydocker
 
-bass source ~/.gvm/environments/system
 source /opt/asdf-vm/asdf.fish
