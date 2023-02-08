@@ -1,0 +1,22 @@
+[
+  {
+    "command": [
+      "/usr/lib/slack/slack",
+      "-s",
+      "--enable-crashpad"
+    ],
+    "working_directory": "/home/berin"
+  },
+  {
+    "command": [
+      "/usr/bin/alacritty"
+    ],
+    "working_directory": "/home/berin"
+  },
+  {
+    "command": [
+      "/usr/bin/TogglDesktop"
+    ],
+    "working_directory": "/home/berin"
+  }
+]
