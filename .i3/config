@@ -356,6 +356,7 @@ exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id numlockx on
 exec --no-startup-id /home/berin/xkb-caps-lock.sh
 exec --no-startup-id xcape -e "#66=Escape"
+exec --no-startup-id xinput --set-prop "Logitech USB Receiver" "Coordinate Transformation Matrix" 1.5 0 0 0 1.5 0 0 0 1
 # exec --no-startup-id yakuake
 exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia_all_screens
@@ -451,10 +452,10 @@ bar {
       separator #666666
         background #222222
         statusline #dddddd
-      #   focused_workspace #0088CC #0088CC #ffffff
-      #   active_workspace #333333 #333333 #ffffff
-      #   inactive_workspace #333333 #333333 #888888
-      #   urgent_workspace #2f343a #900000 #ffffff
+        # focused_workspace #0088CC #0088CC #ffffff
+        # active_workspace #333333 #333333 #ffffff
+        # inactive_workspace #333333 #333333 #888888
+        # urgent_workspace #2f343a #900000 #ffffff
 
         # background #222D31
         # statusline #F9FAF9
