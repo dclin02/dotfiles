@@ -15,3 +15,6 @@ format = '([\[$conflicted$deleted$renamed$modified$staged$untracked$ahead_behind
 [directory]
 truncate_to_repo=false
 truncation_length=2
+
+[status]
+disabled = false
