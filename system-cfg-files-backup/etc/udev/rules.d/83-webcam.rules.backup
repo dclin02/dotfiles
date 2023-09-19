@@ -1,0 +1,3 @@
+KERNEL=="video[0-9]*", SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTR{name}=="HD Pro Webcam C920", SYMLINK+="video-cam1"
+KERNEL=="video[0-9]*", SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTR{name}=="HD User Facing: HD User Facing", SYMLINK+="video-cam2"
+

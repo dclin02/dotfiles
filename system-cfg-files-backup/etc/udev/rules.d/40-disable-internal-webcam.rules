@@ -1,0 +1,1 @@
+ATTRS{idVendor}=="0408", ATTRS{idProduct}=="a061", RUN="/bin/sh -c 'echo 0 >/sys/\$devpath/authorized'"
