@@ -1,4 +1,4 @@
 # SUBSYSTEM=="usb", ATTRS{idVendor}=="8087", ATTRS{idProduct}=="0aaa", RUN+="/home/berin/keyboard-configure.sh"
 # ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="05ac", ATTRS{idProduct}=="024f", RUN+="/home/berin/keyboard-configure.sh"
 # KERNEL=="hidraw", SUBSYSTEM=="hidraw", ATTRS{address}=="dc:2c:26:2f:52:58", RUN+="/home/berin/keyboard-configure.sh"
-ACTION=="add", SUBSYSTEM=="input", ATTRS{id/vendor}=="05ac", ATTRS{id/product}=="024f", RUN+="/home/berin/keyboard-configure.sh", OWNER="berin"
+SUBSYSTEM=="input", ATTRS{id/vendor}=="05ac", ATTRS{id/product}=="024f", RUN+="/home/berin/keyboard-configure.sh", OWNER="berin"
