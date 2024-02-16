@@ -1,7 +1,7 @@
 [Unit]
 Description=Whatever description
-StartLimitIntervalSec=500
-StartLimitBurst=5
+StartLimitIntervalSec=120
+StartLimitBurst=20
 
 [Service]
 Type=simple
