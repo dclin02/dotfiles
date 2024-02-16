@@ -1,13 +1,11 @@
 [
   {
     "command": [
-      "/usr/bin/alacritty"
-    ],
-    "working_directory": "/home/berin"
-  },
-  {
-    "command": [
-      "/usr/bin/TogglDesktop"
+      "/usr/lib/slack/slack",
+      "-s",
+      "--enable-crashpad",
+      "--enable-crashpad",
+      "--enable-crashpad"
     ],
     "working_directory": "/home/berin"
   }
