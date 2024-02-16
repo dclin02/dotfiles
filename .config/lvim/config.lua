@@ -19,6 +19,7 @@ vim.opt.fillchars = {
   verthoriz = ' ',
 }
 vim.opt.timeoutlen = 750
+vim.opt.statuscolumn = "%s %l %r"
 
 -- general
 lvim.log.level = "info"
@@ -38,6 +39,10 @@ lvim.keys.insert_mode["<C-k>"] = "<cmd>lua vim.lsp.buf.signature_help()<cr>"
 
 lvim.keys.normal_mode["<A-l>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<A-h>"] = ":BufferLineCyclePrev<CR>"
+lvim.keys.normal_mode["<A-l>"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["<A-h>"] = ":BufferLineCyclePrev<CR>"
+lvim.keys.normal_mode["<A-S-h>"] = ":BufferLineMovePrev<CR>"
+lvim.keys.normal_mode["<A-S-l>"] = ":BufferLineMoveNext<CR>"
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
@@ -311,6 +316,18 @@ lvim.plugins = {
       require("spectre").setup()
     end,
   },
+  {
+    "zbirenbaum/copilot-cmp",
+    event = "InsertEnter",
+    dependencies = { "zbirenbaum/copilot.lua" },
+    config = function()
+      vim.defer_fn(function()
+        require("copilot").setup()     -- https://github.com/zbirenbaum/copilot.lua/blob/master/README.md#setup-and-configuration
+        require("copilot_cmp").setup() -- https://github.com/zbirenbaum/copilot-cmp/blob/master/README.md#configuration
+      end, 100)
+    end,
+  },
+  'gptlang/CopilotChat.nvim',
 }
 
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
