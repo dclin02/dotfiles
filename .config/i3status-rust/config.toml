@@ -34,7 +34,7 @@ missing_format = ""
 block = "net"
 device = "enp7s0"
 # format = "Ethernet{speed_down}{speed_up}"
-format = "$icon ^icon_net_down$speed_down.eng(p:K) ^icon_net_up$speed_up.eng(p:K) "
+format = " $icon ^icon_net_down$speed_down.eng(p:K) ^icon_net_up$speed_up.eng(p:K) "
 missing_format = ""
 
 [[block]]
