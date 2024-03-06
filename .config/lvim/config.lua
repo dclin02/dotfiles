@@ -72,6 +72,14 @@ lvim.builtin.which_key.mappings["t"] = {
   t = { "<cmd>TodoTelescope<cr>", "Todo Telescope" },
 }
 
+lvim.builtin.which_key.mappings["ss"] = {
+  name = "Spectre Panel for Search and Replace",
+  t = { "<cmd>lua require'spectre'.toggle()<CR>", "Toggle Spectre" },
+  s = { "<cmd>lua require'spectre'.toggle()<CR>", "Toggle Spectre" },
+  c = { "<cmd>lua require'spectre'.open_visual({select_word=true})<CR>", "Search current word" },
+  f = { "<cmd>lua require'spectre'.open_file_search({select_word=true})<CR>", "Search on current file" },
+}
+
 -- -- Change theme settings
 -- lvim.colorscheme = "lunar"
 lvim.colorscheme = "onedarker"
