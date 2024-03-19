@@ -1,5 +1,5 @@
+-- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 --[[
- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
  `lvim` is the global options object
 ]]
 -- vim options
@@ -78,6 +78,9 @@ lvim.builtin.which_key.mappings["ss"] = {
   s = { "<cmd>lua require'spectre'.toggle()<CR>", "Toggle Spectre" },
   c = { "<cmd>lua require'spectre'.open_visual({select_word=true})<CR>", "Search current word" },
   f = { "<cmd>lua require'spectre'.open_file_search({select_word=true})<CR>", "Search on current file" },
+}
+lvim.builtin.which_key.mappings["W"] = {
+  "<cmd>set wrap!<cr>", "Toggle Word Wrap",
 }
 
 -- -- Change theme settings
@@ -335,7 +338,20 @@ lvim.plugins = {
       end, 100)
     end,
   },
-  'gptlang/CopilotChat.nvim',
+  -- 'gptlang/CopilotChat.nvim',
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    branch = "canary",
+    dependencies = {
+      { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
+      { "nvim-lua/plenary.nvim" },  -- for curl, log wrapper
+    },
+    opts = {
+      debug = true, -- Enable debugging
+      -- See Configuration section for rest
+    },
+    -- See Commands section for default commands if you want to lazy load on them
+  },
 }
 
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
