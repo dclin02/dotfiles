@@ -21,7 +21,7 @@ missing_format = ""
 
 [[block]]
 block = "music"
-format = " $icon {$combo.str(max_w:20) $play $next |}"
+format = " $icon {$combo.str(max_w:50,rot_interval:0.5) $play $next |}"
 
 [[block]]
 block = "net"
