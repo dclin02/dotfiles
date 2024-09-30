@@ -95,6 +95,7 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 -- lvim.builtin.nvimtree.setup.actions.open_file.resize_window = true
 lvim.builtin.treesitter.rainbow.enable = true
 lvim.builtin.treesitter.highlight.enabled = true
+lvim.builtin.lir.show_hidden_files = true
 
 -- Automatically install missing parsers when entering buffer
 lvim.builtin.treesitter.auto_install = true
@@ -347,7 +348,7 @@ lvim.plugins = {
       { "nvim-lua/plenary.nvim" },  -- for curl, log wrapper
     },
     opts = {
-      debug = true, -- Enable debugging
+      debug = false, -- Enable debugging
       -- See Configuration section for rest
     },
     -- See Commands section for default commands if you want to lazy load on them
