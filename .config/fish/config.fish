@@ -8,6 +8,7 @@ alias lg="lazygit"
 alias tray="/home/berin/tray"
 alias notes="tmux attach-session -t notes || tmux new -s notes \"z isaac & lvim notes.txt\""
 alias hdmi="tmux attach-session -t hdmi || tmux new -s hdmi"
+alias main="tmux attach-session -t main"
 alias edp="tmux attach-session -t edp || tmux new -s edp"
 alias tempo="curl 'wttr.in/~USP?2QF'"
 alias tempo2="curl 'v2.wttr.in/~USP?2QF'"
@@ -27,10 +28,6 @@ alias kb "/home/berin/keyboard-configure.sh"
 direnv hook fish | source
 set -gx EDITOR lvim
 set -gx BROWSER /usr/bin/firefox
-
-# VLC fix should be temporary
-set -gx LIBVA_DRIVER_NAME vdpau
-set -gx VDPAU_DRIVER nvidia
 
 fish_add_path (go env GOPATH)/bin
 
